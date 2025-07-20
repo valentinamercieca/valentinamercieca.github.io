@@ -1,0 +1,685 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>e-Portfolio by Valentina Mercieca</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /> <!-- Font Awesome -->
+        <style>
+            /* Remove only the line above the h1 "The Data Professional" */
+            .no-line {
+                border: none;  /* Ensure no border is applied */
+                margin: 0;     /* Remove margin to avoid spacing issues */
+                padding: 0;    /* Remove padding */
+            }
+
+            /* This is for existing hr elements to keep them as they are */
+            hr.major {
+                display: block; /* Ensure hr elements show normally */
+                margin: 20px 0; /* Adjust spacing as needed */
+            }
+
+            /* Increase font size for the paragraph */
+            .big-data-paragraph {
+                font-size: 1.3em; /* Adjust font size */
+                line-height: 1.6; /* Adjust line height for readability */
+                margin-bottom: 0.5em; /* Reduced margin between paragraphs */
+                text-align: justify; /* Justify text alignment */
+            }
+
+            /* Styling for headings */
+            h2 {
+                font-size: 1.75em;
+                margin-top: 1.5em; /* Space before the heading */
+                margin-bottom: 1em; /* Space after the heading */
+                font-weight: bold;
+            }
+
+            h3 {
+                font-size: 1.3em;
+                margin-top: 1.2em; /* Space before the subheading */
+                margin-bottom: 0.5em; /* Space after the subheading */
+                font-weight: normal; /* Ensures the text is not bold */
+                color: inherit; /* Inherit the color of the surrounding text */
+            }
+
+
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Main -->
+            <div id="main">
+                <div class="inner">
+
+                    <!-- Header -->
+                    <header id="header">
+                        <a href="index.html" class="logo"><strong>Valentina Mercieca - MSc in Data Science - University of Essex Online</strong></a>
+                        <ul class="icons">
+                            <li><a href="https://www.linkedin.com/in/valentina-mercieca-473263239" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://github.com/valentinamercieca" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </header>
+
+
+                    <!-- Content -->
+                    <section>
+                        <header class="main">
+                            <h1 class="no-line">Machine Learning</h1> <!-- Added the class here -->
+                        </header>
+
+
+
+                        <!-- Increase font size for this paragraph -->
+                        <p class="big-data-paragraph">
+                            The Machine Learning module introduced core concepts and techniques used to build intelligent systems, covering areas such as regression, clustering, neural networks, and natural language processing. Over twelve weeks, I gained hands-on experience using Python and libraries like Scikit-Learn and Keras to apply machine learning.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            The module combined theoretical understanding with technical implementation and critical reflection, allowing me to build confidence in selecting, evaluating, and deploying models while also considering their ethical and social implications.
+                        </p>
+                            
+                        
+
+                        <hr class="major" /> <!-- Line here -->
+
+
+
+                        <h2>Unit 1: Introduction to Machine Learning</h2>
+
+                        <p class="big-data-paragraph">
+                            In this first unit, we were introduced to the foundations of Machine Learning (ML), focusing on how it has evolved and how it is shaping modern industries. I learned that ML is already embedded in many aspects of our lives - from personalised recommendations online to more complex systems like fraud detection and medical diagnostics. A key concept this week was that ML depends on large-scale data and algorithms that allow machines to learn patterns and make decisions without being explicitly programmed for every task (IBM, 2021). The lecturecast explained the categories of ML – supervised, unsupervised, and reinforcement learning – and showed how ML is closely linked to Big Data and Artificial Intelligence (AI). I found the relationship between these technologies especially interesting, as they all contribute to the growing ability of systems to automate tasks and adapt in real-time. The unit also outlined the technical and professional skills needed in ML, such as proficiency in Python, understanding statistical methods, and being aware of ethical and societal impacts.
+                        </p>
+
+                        <h3 style="font-weight: 600;" class="spaced-heading">Collaborative Discussion 1: The 4th Industrial Revolution</h3>
+
+                        <p class="big-data-paragraph">
+                            This week, I wrote a post for the collaborative discussion on Industry 4.0. I focused on its impact on the healthcare sector, highlighting both technological benefits and vulnerabilities. I used the 2017 WannaCry cyberattack on the NHS as an example of how digital systems, while powerful, can fail without proper cybersecurity and resilience measures (NAO, 2018; NHE, 2018). 
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            I also connected this to the transition toward Industry 5.0, which promotes more human-focused and sustainable technological design (Metcalf, 2024). This task helped me relate ML and automation to real-world consequences and ethical considerations in technology use.
+                        </p>
+
+                        <p class="big-data-paragraph">The post can be found <a href="https://github.com/valentinamercieca/Machine_Learning/blob/main/Units%201-3%20Collaborative%20Discussion%201%20-%20The%204th%20Industrial%20Revolution.pdf" target="_blank">here</a>.</p>
+
+                        
+                    
+                        <style>
+                            /* Add space below h3 headings */
+                            .spaced-heading {
+                                margin-top: 2.5em; /* Adjust the space between the two h3 tags */
+                            }
+                        </style>
+
+
+                        <hr class="major" /> <!-- Line here -->
+
+                        <h2>Unit 2: Exploratory Data Analysis (EDA)</h2>
+                        <p class="big-data-paragraph">
+                            This week focused on EDA, a foundational step in preparing data for machine learning. I learned that EDA is essential for validating the quality of raw data, identifying missing or inconsistent values, and gaining an overall understanding of the dataset’s structure (Dunkeld, 2024). This process helps ensure that any insights or predictions drawn from the data are accurate and reliable. EDA also plays a key role in selecting and refining features, which are the variables used to train ML models. As a result, a well-executed EDA step can directly impact model performance and relevance in real-world business or research contexts.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            The learning materials introduced several techniques used during EDA, such as data visualisation, summary statistics, and feature correlation analysis. I applied these concepts in Python using Jupyter Notebook, which allowed me to explore how features relate to each other, detect patterns, and flag anomalies. I encountered some issues with the original tutorial file due to deprecated functions and syntax errors, which I corrected myself. This process gave me valuable hands-on experience in debugging and adapting code and reinforced the importance of understanding the tools I am using rather than relying solely on pre-written solutions.
+                        </p>
+
+
+
+                        <h3 style="font-weight: 600;" class="spaced-heading">EDA Tutorial and Auto-mpg Dataset Analysis </h3>
+
+                        <p class="big-data-paragraph">
+                            The artefact for this week includes two completed practical exercises. First, I worked through the tutorial notebook, applying essential EDA techniques such as inspecting data types, reviewing summary statistics, and generating visual representations of the data. Fixing the code myself helped me better understand the logic behind each function and improved my confidence in using Python for data analysis.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            I then applied similar methods to the Auto-mpg dataset. I cleaned the data by identifying and addressing missing values, examined the shape of distributions through skewness and kurtosis, and created a correlation heat map to evaluate the relationships between features. Scatter plots helped me visualise how different variables interacted, and I transformed categorical data into numerical values to prepare the dataset for machine learning. This task helped me see how EDA directly supports model readiness and reinforced the value of thorough, hands-on exploration before training any algorithms. 
+                        </p>
+
+                        <p class="big-data-paragraph">The Jupyter notebooks can be found <a href="https://github.com/valentinamercieca/Machine_Learning/tree/main/Unit%202%20EDA%20Tutorial%20and%20auto-mpg%20Dataset%20Analysis" target="_blank">here</a>.</p>
+
+
+
+
+
+                        <hr class="major" /> <!-- Line here -->
+
+                        <h2>Unit 3: Correlation and Regression</h2>
+                        <p class="big-data-paragraph">
+                            This unit introduced the statistical foundations of correlation and regression, two essential tools for understanding relationships between variables in data analysis and machine learning. Correlation measures the strength and direction of a relationship between two variables, while regression allows us to express that relationship through an equation, which can be used to predict the value of one variable based on another. A critical concept covered this week was that correlation does not imply causation – two variables may show a strong statistical relationship without one directly influencing the other. This distinction is essential for responsible data interpretation, particularly in machine learning, where misinterpreting correlation as causation can lead to misleading models and unethical conclusions. This idea has been widely discussed since Pearson’s work and remains a key principle in statistical reasoning (Pilat and Sekoul, 2021).
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            The weekly reading extended this foundation by exploring the relationship between linear regression and simple neural networks. Using Bishop and Bishop (2024), I learned how linear models can be framed as single-layer networks, and how non-linear basis functions allow these models to capture more complex relationships in data. The material also introduced decision theory as a way to derive predictive functions through loss minimisation, and the bias–variance trade-off as a central consideration in balancing model accuracy and generalisation. These insights were valuable in helping me connect traditional regression analysis with the building blocks of more advanced deep learning models. It has given me a clearer picture of how foundational statistical methods scale into more complex machine learning frameworks.
+                        </p>
+
+
+                        <h3 style="font-weight: 600;" class="spaced-heading">Correlation and Regression Notebooks</h3>
+
+                        <p class="big-data-paragraph">
+                            In the first notebook, I explored covariance and Pearson correlation by calculating how two variables move together and measuring the strength of their linear relationship. The second notebook focused on linear regression, where I used a simple model to predict one variable based on another and visualised the fit of the regression line.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            In the third notebook, I worked on multiple linear regression, incorporating more than one predictor to estimate outcomes. This introduced more complexity and helped me see how relationships between several independent variables can jointly influence a dependent variable. Finally, the polynomial regression notebook extended linear models to capture non-linear relationships. Adjusting the polynomial degree allowed me to observe how increased model flexibility can fit more complex data patterns but also raised questions around overfitting.
+                        </p>
+
+                
+                        <p class="big-data-paragraph">
+                            Throughout these exercises, I adjusted variables and interpreted how these changes affected model performance and accuracy. These tasks not only helped me apply theoretical knowledge but also developed my practical confidence in working with statistical tools for machine learning.
+                        </p>
+
+                        <p class="big-data-paragraph">The notebooks can be found <a href="https://github.com/valentinamercieca/Machine_Learning/tree/main/Unit%203%20Correlation%20and%20Regression%20Notebooks" target="_blank">here</a>.</p>
+
+
+
+                        <hr class="major" /> <!-- Line here -->
+
+                        <h2>Unit 4: Linear Regression with Scikit-Learn</h2>
+                        <p class="big-data-paragraph">
+                            This week focused on implementing linear regression models using the Scikit-Learn library in Python. Building on the statistical foundation from previous units, I learned how to apply regression techniques to real datasets using structured, object-oriented methods provided by Scikit-Learn. We explored both simple linear regression, which models a relationship between one independent and one dependent variable, and multivariate linear regression, where multiple features are used to predict a single outcome.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            One of the key takeaways this week was learning how to evaluate regression models using performance metrics such as R² and Mean Squared Error, which give insight into how well the model fits the data. These practical skills helped me move beyond just generating regression lines to assessing model quality and making informed improvements.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            The reading also introduced a broader view of the Scikit-Learn ecosystem. I found it useful to understand how this library integrates with other scientific Python tools like NumPy and SciPy, making it a central tool for many machine learning workflows (Scikit-Learn, no date). 
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            Alongside this, the reading from Bishop and Bishop (2024) focused on deep neural networks which is a more advanced machine learning technique that builds directly on concepts introduced in regression. The reading explained how neural networks can be thought of as sequences of linear and non-linear transformations, with regression forming the basis for the simplest of these transformations. It described how neural networks use layers of interconnected nodes (neurons) to learn representations of data, and how gradient descent is used to optimise the model by minimising error across training data. A key insight for me was the explanation of how deep learning enables hierarchical learning where lower layers detect simple features and higher layers build on them to identify more complex patterns, such as recognising objects in images. The text also introduced practical challenges, including the vanishing and exploding gradient problems that can occur during training. These issues were addressed through techniques such as data normalisation and advanced optimisers like Adam, which dynamically adjust learning rates during training. I found the discussion on representation learning particularly relevant, as it highlighted how neural networks transform raw input data into high-level features useful for classification or prediction. This reading helped me to better appreciate how linear models like the ones we built this week form the conceptual foundation for more sophisticated neural architectures used in deep learning.
+                        </p>
+
+
+
+
+                        <h3 style="font-weight: 600;" class="spaced-heading">Linear Regression with Scikit-Learn</h3>
+                        <p class="big-data-paragraph">
+                            This week’s artefact is the completed seminar activity, which consisted of two main parts. First, I ran and reviewed each step of the fuelconsumption.ipynb demo using Scikit-Learn. This reinforced my understanding of the regression workflow in Python — from importing and visualising data, to splitting datasets, training models, and evaluating performance. Seeing each stage of the pipeline laid out clearly helped connect the theoretical steps we have discussed in earlier weeks.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            In the second part of the task, I worked with Global_Population.csv and Global_GDP.csv to investigate the relationship between a country's average population and its average per capita GDP between 2001 and 2021. For Task A, I pre-processed the data, handled missing values, and calculated the mean values needed. I then generated a scatter plot and computed the Pearson Correlation Coefficient, which showed a weak negative correlation; hence, suggesting that population size does not strongly determine per capita wealth. For Task B, I performed a linear regression analysis using population as the independent variable and GDP per capita as the dependent variable. The regression model confirmed the weak relationship, and the low R² score suggested that population alone is not a good predictor of GDP per capita.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            This activity strengthened my ability to apply regression techniques to complex datasets, interpret statistical outputs, and think critically about what the results actually imply in a broader economic context. It also improved my fluency in using Scikit-Learn and reinforced the importance of careful data preparation in model accuracy.
+                        </p>
+                        
+                        <p class="big-data-paragraph">The two Jupyter notebook files can be found <a href="https://github.com/valentinamercieca/Machine_Learning/tree/main/Unit%204%20Linear%20Regression%20with%20Scikit-Learn" target="_blank">here</a>.
+                        </p>
+                    
+
+
+
+                        <hr class="major" /> <!-- Line here -->
+
+                        <h2>Unit 5: Clustering</h2>
+                        <p class="big-data-paragraph">
+                            This week introduced the fundamental principles of clustering, a fundamental unsupervised learning technique used to group similar data points without pre-labelled outcomes. Clustering is commonly used in fields such as pattern recognition, image processing, bioinformatics, and marketing. The core idea is to group objects so that items within the same cluster are more similar to each other than to those in other clusters. We focused particularly on K-Means and agglomerative clustering, and explored how different distance metrics, such as Euclidean distance, influence cluster formation.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            The lecturecast emphasised the iterative nature of clustering algorithms and the importance of evaluating clustering results using measures like intra-cluster similarity and inter-cluster distance. A key learning point was understanding the limitations of clustering, particularly its sensitivity to initial conditions and choice of distance metric. This has practical implications, as clustering results can vary significantly depending on how the algorithm is initialised or how the data is scaled and prepared.
+                        </p>
+
+                    
+                        <h3 style="font-weight: 600;" class="spaced-heading">K-Means Clustering Animations</h3>
+                        <p class="big-data-paragraph">
+                            In the first artefact, I explored two K-Means clustering animations and wrote down my reflections. The first animation illustrated how K-Means operates by randomly placing centroids, assigning data points based on proximity, and updating centroid positions over several iterations. This made the algorithm’s convergence process more intuitive and highlighted how it moves towards a local optimum.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            The second animation allowed more control and introduced the concept of the Voronoi diagram to visualise the boundaries between clusters. This helped me understand how cluster assignment is influenced by centroid location and how decision boundaries shift as centroids update. It also demonstrated how sensitive K-Means is to initial placement of centroids. This is a drawback that can lead to suboptimal clustering unless techniques like K-Means++ are used. These animations reinforced the logic behind the algorithm and clarified how K-Means iteratively improves clustering based on distance and mean-centroid recalculation.
+                        </p>
+
+                        <p class="big-data-paragraph">The reflection can be found <a href="https://github.com/valentinamercieca/Machine_Learning/blob/main/Unit%205%20Clustering%20Animations.pdf" target=_blank">here.</a></p>
+
+
+                        <h3 style="font-weight: 600;" class="spaced-heading">Jaccard Coefficient Calculations</h3>
+                        <p class="big-data-paragraph">
+                            The second artefact involved calculating the Jaccard coefficient to measure similarity between binary symptom profiles of three individuals: Jack, Mary, and Jim. I encoded the features into binary vectors and computed the similarity between each pair. Jack and Mary had the highest similarity with a coefficient of 0.667, indicating a strong overlap in symptoms and test results. Jack and Jim shared less in common, with a coefficient of 0.333, while Jim and Mary had the lowest similarity at 0.25. This analysis showed how the Jaccard coefficient can be used to quantify similarity between categorical data and support clustering decisions.
+                        </p>
+                        <p class="big-data-paragraph">The document can be found <a href="https://github.com/valentinamercieca/Machine_Learning/blob/main/Unit%205%20Jaccard%20Coefficient%20Calculation.pdf" target=_blank">here.</a></p>
+
+
+
+                        <hr class="major" /> <!-- Line here -->
+                        <h2>Unit 6: Clustering with Python</h2>
+
+                        <p class="big-data-paragraph"> 
+                            This week focused on applying the K-Means clustering algorithm using Python’s scikit-learn library. Having studied the theory of clustering in Unit 5, the emphasis now shifted to practical implementation and evaluation using real-world datasets. K-Means is a powerful unsupervised learning technique used to group data based on similarity, and this unit helped me explore how it can uncover hidden patterns when no target labels are available.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            In addition to the technical seminar tasks, this week also marked the submission of our team project, which spanned the last three weeks. The assignment involved analysing Airbnb listing data to uncover business insights using classical machine learning techniques, including regression and clustering. I was actively involved throughout the project lifecycle – contributing to the initial idea formulation, coding and structuring the components, and leading on reviewing, editing, and writing sections of the final report. This experience helped me strengthen both my collaborative and technical skills and showed me how machine learning can directly support decision-making in a business context.
+                        </p>
+
+                        <h3 style="font-weight: 600;" class="spaced-heading">K-Means Clustering Exercises</h3>
+
+                        <p class="big-data-paragraph">
+                            I completed three clustering exercises using Python and scikit-learn:
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            Task A (Iris data): After preprocessing the dataset to remove non-numeric columns, I applied K-Means clustering with K=3. The resulting clusters were compared to the original species labels. The model clearly distinguished Setosa but was less accurate in separating Versicolour and Virginica due to overlapping features, which illustrates a common limitation in clustering.
+                        </p>
+
+
+                        <p class="big-data-paragraph">
+                            Task B (Wine data): This dataset was also cleaned and scaled before applying K=3 clustering. The outcome showed moderate alignment with the actual wine categories (1, 2, and 3). Visual inspection and evaluation confirmed that some variables had a stronger influence on cluster separation than others, reinforcing the importance of careful feature selection.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            Task C (WeatherAUS data): This more complex dataset required significant preprocessing. I tested a range of K values from 2 to 6 and visualised the results using 2D scatter plots. While some clusters appeared meaningful, the high dimensionality and noisy features made interpretation more difficult. This task helped me appreciate the limitations of K-Means in less structured datasets and the need for techniques such as dimensionality reduction.
+                        </p>
+
+                         <p class="big-data-paragraph">
+                            Each task helped me develop greater fluency in using scikit-learn and reinforced the importance of data preparation, scaling, and iterative model evaluation in clustering workflows.
+                        </p>
+
+
+                        <p class="big-data-paragraph">The three notebooks can be accessed <a href="https://github.com/valentinamercieca/Machine_Learning/tree/main/Unit%206%20K-Means%20Clustering%20Exercises" target="_blank">here</a>.</p>
+
+                        
+
+                        <h3 style="font-weight: 600;" class="spaced-heading">Development Team Project: Airbnb Pricing in NYC The Influence of Landmark Proximity</h3>
+
+                        <p class="big-data-paragraph">
+                            For the group assignment, we investigated how proximity to major NYC landmarks influences Airbnb pricing. Our chosen approach followed the Classical ML track, combining regression and clustering to explore pricing strategies across different neighbourhoods.
+                        </p>
+
+
+                        <p class="big-data-paragraph">
+                            I contributed throughout the project, from helping shape our research question and methodology, to coding aspects of data preprocessing and clustering, and supporting the writing and editing of the final report. We used K-Means clustering to group listings based on geographic and pricing features, and these clusters were then incorporated into our regression models to improve their predictive accuracy.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            Working in a team brought both collaboration and challenge. While we had differing working styles and occasional tensions, the experience helped me develop patience, active listening, and a stronger sense of shared responsibility. I focused on contributing reliably and supporting team progress, even when things became difficult. This reinforced the importance of communication and adaptability in group work – skills that are just as critical as technical knowledge in professional settings.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            This project was a valuable opportunity to apply everything learned so far: from data wrangling and modelling to interpretation and presentation in a team setting.
+                        </p>
+
+                        
+                        <p class="big-data-paragraph">The document and code can be accessed <a href="https://github.com/valentinamercieca/Machine_Learning/tree/main/Unit%206%20Team%20Assignment" target="_blank">here</a>.</p>
+
+
+
+                        <hr class="major" /> <!-- Line here -->
+                        <h2>Unit 7: Introduction to Artificial Neural Networks</h2>
+                        <p class="big-data-paragraph"> 
+                            This week introduced the fundamental concepts of artificial neural networks (ANNs), which are inspired by the way biological brains process information. ANNs consist of layers of artificial neurons that work together to learn from data and make predictions. These systems are capable of identifying complex patterns by adjusting internal parameters (weights and biases) through training, and they now play a key role in many areas of machine learning
+                        </p>
+
+                        <p class="big-data-paragraph"> 
+                            The lecturecast and readings focused on how artificial neurons simulate biological behaviour, and how learning occurs through mechanisms like forward propagation and weight adjustment. A key takeaway from Sharma (2017) was the role of activation functions. These functions determine whether a neuron “fires” by applying a mathematical transformation to its input, adding crucial nonlinearity that enables the network to learn complex patterns. Several types of activation functions were discussed:
+                        </p>
+
+                        <ul class="big-data-paragraph" style="text-align: justify;">
+                            <li>Step Function, which is binary and simplistic.</li>
+                            <li>Sigmoid and Tanh, which provide smooth curves but are prone to vanishing gradients.</li>
+                            <li>ReLU, which is widely used for its efficiency but can suffer from "dying neurons".</li>
+                        </ul>
+
+                        <p class="big-data-paragraph"> 
+                            Understanding these functions gave me insight into why deep networks need nonlinearity to be effective, and how certain choices (like ReLU over Sigmoid) can impact learning performance.
+                        </p>
+
+                    
+
+                        <h3 style="font-weight: 600;" class="spaced-heading">Perceptron Activities</h3>
+                        <p class="big-data-paragraph">
+                            The artefact for this unit consisted of three tutorial notebooks demonstrating the structure and behaviour of different perceptron models. These were run interactively as part of the lecturecast activities.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            In the Simple Perceptron notebook, I observed how a single-layer perceptron makes binary decisions based on weighted inputs. This clarified the basics of input, weight, bias, and activation function working together to produce an output.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            In the Perceptron AND Operator activity, I used a perceptron to replicate the logic of an AND gate. The model outputted 1 only when both inputs were 1, showing how basic logical operations can be implemented using neural models.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            The Multi-layer Perceptron activity introduced more complexity by stacking layers and applying a sigmoid activation function. This showed how adding layers and nonlinear functions increases a network’s capacity to learn from data and approximate more complicated relationships.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            Running these notebooks made the mathematical theory feel much more tangible. I could visually see how changes in weights or the type of activation function affected output. It also helped reinforce the importance of proper activation selection and layer architecture in network design.
+                        </p>
+
+
+                        <p class="big-data-paragraph">The Jupyter notebook files can be found <a href="https://github.com/valentinamercieca/Machine_Learning/tree/main/Unit%207%20Perceptron%20Activities" target="_blank">here</a>.</p>
+
+
+
+                        <hr class="major" /> <!-- Line here -->
+                        <h2>Unit 8: Training an Artificial Neural Network</h2>
+                        <p class="big-data-paragraph"> 
+                            This week focused on how artificial neural networks (ANNs) learn from data through training, particularly via the backpropagation algorithm. Building on last week’s introduction to ANN structure, we examined how networks minimise error by adjusting their internal weights in response to feedback. The lecturecast and readings explained how this learning process allows the network to refine its predictions over time by propagating the error backward from the output layer to earlier layers – a process known as backpropagation.
+                        </p>
+
+                        <p class="big-data-paragraph"> 
+                            The key concept introduced was the use of gradient descent to iteratively reduce the cost function which is a mathematical representation of prediction error. By computing the gradient (i.e., the direction and rate of fastest increase in error), the model adjusts weights to move towards lower error with each iteration. This mechanism is crucial for enabling networks to improve their accuracy over time and was central to this week’s practical and theoretical learning.
+                        </p>
+                        
+
+                        <p class="big-data-paragraph"> 
+                            The readings also explored real-world applications of ANN, from financial forecasting to medical diagnostics. These examples helped contextualise the power of ANN as a foundational machine learning tool capable of tackling diverse problems.
+                        </p>
+                        
+                        
+                        <h3 style="font-weight: 600;" class="spaced-heading">Gradient Cost Function</h3>
+                        <p class="big-data-paragraph">
+                            As part of this unit, I completed the gradient descent cost function tutorial using Jupyter Notebook. This activity involved running and modifying the script to observe how changes in learning rate and iteration number affect the rate of convergence.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            By increasing the number of iterations, I could see the cost function decrease more steadily. When I adjusted the learning rate, I noticed that too high a value caused instability and oscillation, while a value that was too low slowed learning significantly. This experiment helped solidify my understanding of the trade-offs involved in hyperparameter tuning and the practical behaviour of optimisation algorithms in training neural networks.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            It also linked directly to the theory of backpropagation, as the changes in weights in a multi-layer network would rely on this same optimisation principle. The visualisation of the cost function over iterations made the abstract concept of "learning" in ANN more concrete.
+                        </p>
+
+                        <p class="big-data-paragraph">The notebook can be found <a href="https://github.com/valentinamercieca/Machine_Learning/blob/main/Unit%208%20Gradient%20Descent%20Cost%20Function.ipynb" target="_blank">here</a>.
+                        </p>
+
+
+                        
+                        <h3 style="font-weight: 600;" class="spaced-heading">Collaborative Discussion 2: Legal and Ethical Views on ANN Applications</h3>
+                        <p class="big-data-paragraph">
+                            For this week’s collaborative discussion, I posted a critical response to Hutson’s (2021) article on AI-generated writing. My post reflected on both the opportunities and challenges that artificial neural networks bring to content creation and communication.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            On the positive side, I highlighted how ANNs can support administrative efficiency and augment creativity, citing studies such as Wang et al. (2021) and McCormack et al. (2019). I also noted how tools like large language models could help democratise access to professional communication, especially for non-native speakers or those with limited literacy (Floridi & Chiriatti, 2020).
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            However, I also raised concerns about misinformation, bias, authorship, and job displacement which are core issues that must be addressed through strong regulatory frameworks and ethical oversight. I referenced works like Al-Busaidi et al. (2024) and the European Commission (2019) to support my call for transparency, interpretability, and fairness in AI design and deployment.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            Writing this post allowed me to engage deeply with the societal impact of ANN, moving beyond technical implementation to consider the broader implications of AI in everyday life. It reinforced the importance of responsible AI development and the role of ethical reflection in shaping machine learning applications.
+                        </p>
+
+                        <p class="big-data-paragraph">The post can be found <a href="https://github.com/valentinamercieca/Machine_Learning/blob/main/Units%208-10%20Collaborative%20Discussion%202%20-%20Legal%20and%20Ethical%20Views%20on%20ANN%20Applications.pdf" target="_blank">here</a>.
+                        </p>
+
+
+
+                        <hr class="major" /> <!-- Line here -->
+                        <h2>Unit 9: Introduction to Convolutional Neural Networks</h2>
+                        <p class="big-data-paragraph"> 
+                            This unit introduced convolutional neural networks (CNNs), a class of deep learning models particularly effective in computer vision tasks. CNNs have revolutionised fields such as image recognition, facial detection, and autonomous driving by enabling machines to learn spatial hierarchies of features through layers of convolutional filters. The lecturecast outlined the structure and components of CNNs, including convolutional layers, pooling layers, and fully connected layers, helping to illustrate how raw image data is transformed into class predictions.
+                        </p>
+
+                        <p class="big-data-paragraph"> 
+                            In addition to CNNs, the unit also touched on more advanced architectures such as Generative Adversarial Networks (GANs) and transformers (like BERT and GPT). These models have significantly extended deep learning’s reach into areas like text generation, image synthesis, and reinforcement learning, highlighting the growing convergence between vision and language models.
+                        </p>
+
+                        <p class="big-data-paragraph"> 
+                            The readings focused not only on CNN mechanics but also the social and ethical consequences of their use. As machine vision becomes embedded in policing, marketing, and surveillance systems, it raises concerns about fairness, bias, and accountability.
+                        </p>
+
+                        <h3 style="font-weight: 600;" class="spaced-heading">CNN Model Activity</h3>
+                        <p class="big-data-paragraph">
+                            The practical task for this week involved working with a CNN trained on the CIFAR-10 dataset, which contains images categorised into ten classes. I ran the object recognition notebook to explore the model’s architecture and performance. I experimented by changing the test input index from x_test[16] to various other values (e.g., x_test[8], x_test[4], and x_test[10]) to evaluate the model’s ability to generalise. In most cases, the model predicted correctly; however, it occasionally misclassified categories. For instance, it predicted a frog as a deer—an understandable confusion given the shared colour and background elements. This exercise reinforced the importance of dataset quality and the need for diverse and well-labelled training data in image classification tasks.
+                        </p>
+
+                         <p class="big-data-paragraph">
+                            The ethical reflection was guided by Wall (2019), who discussed the risks of CNN-based facial recognition systems. The article highlighted concerns around algorithmic bias, especially how CNNs tend to misidentify people with darker skin tones, particularly Black women. This stems from underrepresentation in training datasets and mirrors deeper societal biases that can become embedded in technological systems.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            Wall also addressed broader implications such as privacy violations, lack of public consent, and the absence of transparency when these systems are deployed by governments or corporations. The potential for wrongful arrests and surveillance overreach underscores the need for robust regulation, independent audits, and ethical design frameworks. This reading helped me reflect more deeply on the role of developers and researchers – not just in building technically accurate models, but also in ensuring those models uphold principles of fairness, accountability, and human dignity.
+                        </p>
+
+                        <p class="big-data-paragraph">The document and notebook can be found <a href="https://github.com/valentinamercieca/Machine_Learning/tree/main/Unit%209%20CNN%20Model%20Activity" target="_blank">here</a>.
+                        </p>
+
+
+
+                        <hr class="major" /> <!-- Line here -->
+                        <h2>Unit 10: Natural Language Processing</h2>
+                        <p class="big-data-paragraph"> 
+                            This week introduced Natural Language Processing (NLP), a rapidly evolving field within machine learning that enables systems to interpret, generate, and engage with human language. We explored the progression of NLP models from early rule-based and statistical methods to advanced deep learning approaches powered by Transformer architectures like BERT, GPT, and T5.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            A crucial element of modern NLP is the attention mechanism which allows models to focus on relevant parts of input sequences for more accurate understanding. This week’s reading from Bishop and Bishop (2024) emphasised how transformers use this mechanism to process data in parallel, leading to significant performance improvements over earlier models like RNNs. This architecture supports self-supervised learning, where models learn from unlabelled data, and transfer learning, which enables fine-tuning pre-trained models on specific tasks. These features have made transformers the foundation of large language models (LLMs) such as GPT-4, which are now widely used across industries from customer service chatbots to automated translation and creative writing tools.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            More importantly, the reading also illustrated how transformer models have extended beyond text to other modalities, including vision and speech. For example, Vision Transformers (ViTs) apply similar principles to image recognition by treating image patches as sequences. This highlights the increasingly multimodal nature of AI systems.
+                        </p>
+
+
+                        <h3 style="font-weight: 600;" class="spaced-heading">CNN Model Exploration Using CNN Explainer</h3>
+                        <p class="big-data-paragraph">
+                            Although the week's topic centred on NLP, the seminar activity provided a hands-on visualisation of convolutional neural networks (CNNs) using the CNN Explainer tool. This exercise complemented previous units by showing how CNNs process images layer by layer.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            I uploaded three images to test the model:
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            A sports car, which the model classified correctly. Early convolutional layers detected edges and curves while deeper layers isolated features like tires and roof shape. ReLU and pooling layers sharpened this focus and resulted in a confident prediction.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            A teacup, which resembled the "espresso" class in the training set. The model again performed well, correctly identifying features like the cup’s rim and shape; thus, demonstrating CNN’s ability to generalise across similar-looking objects.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            A tree, which was not in the training set. Here, the model struggled. While early filters picked up on basic shapes and textures, deeper layers produced noisy outputs, and this led to poor classification ("bell pepper" received the highest activation).
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            This activity offered a deeper appreciation for how CNNs extract hierarchical features from images and underscored their limitations with unfamiliar data.
+                        </p>
+
+                        <p class="big-data-paragraph">The exercise can be found <a href="https://github.com/valentinamercieca/Machine_Learning/blob/main/Unit%2010%20CNN%20Model%20Exploration%20Using%20CNN%20Explainer.pdf" target="_blank">here</a>.
+                        </p>
+
+
+
+                        <hr class="major" /> <!-- Line here -->
+                        <h2>Unit 11: Model Selection and Evaluation</h2>
+                        <p class="big-data-paragraph"> 
+                            This unit marked a shift towards the final stages of the machine learning lifecycle: model selection, performance evaluation, and deployment. Building on earlier weeks where we developed and trained models, this week focused on how to choose between different models using appropriate evaluation metrics and how to optimise performance through techniques like hyperparameter tuning. The importance of these processes became clear as I explored how subtle changes in model parameters or evaluation methods can significantly affect outcomes.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            We also delved into MLOps (Machine Learning Operations), a framework for managing ML systems at scale. Concepts such as automated monitoring, retraining pipelines, and version control for models were introduced. These operational practices are essential in real-world production settings where models must be both reproducible and adaptable over time. This broader view helped reinforce the importance of model reliability beyond academic or sandbox testing.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            Evaluation metrics beyond just accuracy, such as AUC, R² score, precision, recall, and confusion matrices, were also introduced. These allow for a more nuanced understanding of how well a model performs, especially in imbalanced or high-stakes scenarios.
+                        </p>
+
+                        <h3 style="font-weight: 600;" class="spaced-heading">Model Performance Measurement</h3>
+                        <p class="big-data-paragraph">
+                            In this task, I assessed model performance using the Iris dataset, augmented with synthetic noise to increase complexity. Two metrics were used: AUC for classification and R² for regression.
+                        </p>
+
+
+                        <p class="big-data-paragraph">
+                            I first built baseline models using a linear SVM classifier and a linear regression model, with a 50/50 train-test split and 200 noise features, achieving an AUC of 0.7277 and an R² of 0.3054.
+                        </p>
+
+
+                        <p class="big-data-paragraph">
+                            I then ran several experiments, varying SVM kernel types (linear, rbf, poly), noise levels (200 vs. 50 features), and test size (0.5 vs. 0.3). Results showed that lower noise and the linear kernel improved performance. I visualised outcomes with bar plots to compare metric scores across configurations.
+                        </p>
+
+                         <p class="big-data-paragraph">
+                            This task reinforced the value of tuning and the importance of clean data and appropriate evaluation metrics.
+                        </p>
+
+                        <p class="big-data-paragraph">The exercise can be found <a href="https://github.com/valentinamercieca/Machine_Learning/blob/main/Unit%2011%20Model%20Performance%20Measurement.ipynb" target="_blank">here</a>.
+                        </p>
+
+
+                        <h3 style="font-weight: 600;" class="spaced-heading">Summative Assessment – Individual Presentation</h3>
+                        <p class="big-data-paragraph">
+                            As part of the final assessment, I submitted an individual video presentation in which I developed a deep learning model using CNNs and transfer learning to classify images from the CIFAR-10 dataset. This task gave me the opportunity to apply techniques learned throughout the module in a complete machine learning pipeline.
+                        </p>
+
+
+                        <p class="big-data-paragraph">
+                            The project involved preparing the dataset, creating a validation set, and training the model using a pre-trained architecture. I evaluated performance using accuracy, precision-recall, and confusion matrices, and explored how hyperparameters such as learning rate, batch size, and number of epochs impacted results.
+                        </p>
+
+
+                        <p class="big-data-paragraph">
+                            What stood out most to me was how transfer learning significantly reduced training time and improved accuracy. This deepened my understanding of how powerful pre-trained models can be, especially when data or time is limited. However, I also faced challenges with model generalisation and selecting the right architecture depth which pushed me to think critically about model complexity versus performance.
+                        </p>
+
+
+                        <p class="big-data-paragraph">The material for this task can be found <a href="https://github.com/valentinamercieca/Machine_Learning/tree/main/Unit%2011%20Individual%20Presentation%20-%20CNN%20and%20Transfer%20Learning" target="_blank">here</a>.
+                        </p>
+
+
+
+
+
+
+
+
+                        <hr class="major" /> <!-- Line here -->
+                        <h2>Unit 12: Industry 4.0 and Machine Learning</h2>
+                        <p class="big-data-paragraph"> 
+                            This final unit introduced the future-facing role of machine learning in the Industry 4.0 era, highlighting how AI technologies are reshaping manufacturing, healthcare, urban infrastructure, and more. I found the concept of Self-Supervised Learning (SSL) particularly compelling, as it addresses one of the biggest challenges in traditional supervised learning: the reliance on large, labelled datasets. By enabling models to learn from unlabelled data, SSL paves the way for more scalable and efficient AI systems.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            I also reflected on Neural Architecture Search (NAS) and its potential to automate model design. While its optimisation capabilities are impressive, I noted important concerns around computational cost and fairness, which must be addressed to ensure sustainable and ethical deployment. Similarly, Edge AI stood out as a critical advancement. Its ability to process data locally, on low-power devices, is central to enabling real-time intelligence in settings like smart traffic management systems, where latency and responsiveness are crucial.
+                        </p>
+
+                        <p class="big-data-paragraph">
+                            Through this week’s reading and reflection, I became more aware of the ethical, environmental, and social implications of emerging ML technologies. I considered how scalability must be balanced with responsibility, and how innovation should align with long-term sustainability goals. These ideas reinforced the importance of critical thinking as part of the technical skill set in machine learning. 
+                        </p>
+
+                        <h3 style="font-weight: 600;" class="spaced-heading">Future of Machine Learning</h3>
+                        <p class="big-data-paragraph">
+                            Drawing on this week's materials, I explored four major themes: Self-Supervised Learning, Neural Architecture Search, Edge AI, and the future of AI ethics. These reflections deepened my appreciation of how far ML has progressed, and how essential it is to approach these developments with a critical and ethical mindset. This activity was a valuable way to conclude the module by connecting technical concepts to real-world impact and long-term vision.
+                        </p>
+
+                        <p class="big-data-paragraph">The document can be found <a href="https://github.com/valentinamercieca/Machine_Learning/blob/main/Unit%2012%20Future%20of%20Machine%20Learning.pdf" target="_blank">here</a>.
+                        </p>
+
+
+
+
+                        <h3 style="font-weight: 600;" class="spaced-heading">The Reflective Essay</h3>
+                        <p class="big-data-paragraph">
+                            I completed a reflective essay that examined my personal and professional growth over the course of the module. Using frameworks like Rolfe et al.’s (2001) reflective model and the Johari Window (Luft and Ingham, 1955), I explored how technical challenges and team dynamics shaped my development. The essay gave me space to reflect more deeply on key experiences, such as the group project, learning to manage interpersonal conflict, and gaining confidence through independent work with CNN.
+                        </p>
+
+                        <p class="big-data-paragraph">The essay can be found <a href="https://github.com/valentinamercieca/Machine_Learning/blob/main/Unit%2012%20Reflective%20Essay%20-%20Machine%20Learning.pdf" target="_blank">here</a>.
+                        </p>
+
+
+                        <hr class="major" /> <!-- Line here -->
+                        <h2>References</h2>
+                        <p class="big-data-paragraph">
+
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                Al-Busaidi, A. et al. (2024) ‘Redefining boundaries in innovation and knowledge domains: Investigating the impact of generative artificial intelligence on copyright and intellectual property rights’, <i>Journal of Innovation & Knowledge</i>, 9(4), Article no. 100630. Available at: https://doi.org/10.1016/j.jik.2024.100630
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                Bishop, C. and Bishop, H. (2024) <i>Deep Learning: Foundations and Concepts</i>. Cham, Switzerland: Springer Nature Switzerland AG. Available at: https://doi.org/10.1007/978-3-031-45468-4
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                Dunkeld, M. (2024) <i>The Importance of Exploratory Data Analysis (EDA) in Product Data Science</i>. Available at: https://medium.com/@melissadunkeld/the-importance-of-exploratory-data-analysis-eda-in-product-data-science-fe5308965630 (Accessed: 12 May 2025).
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                European Commission. (2019) <i>Ethics guidelines for trustworthy AI</i>. Available at: https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai (Accessed: 27 June 2025).
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                Floridi, L. and Chiriatti, M. (2020) ‘GPT-3: Its Nature, Scope, Limits, and Consequences’, <i>Minds & Machines</i>, 30(4), pp. 681-694. Available at: https://doi.org/10.1007/s11023-020-09548-1
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                Hutson, M. (2021) <i>Robo-writers: the rise and risks of language-generating AI</i>. Available at: https://www.nature.com/articles/d41586-021-00530-0 (Accessed: 27 June 2025).
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                IBM. (2021) <i>What is machine learning?</i> Available at: https://www.ibm.com/think/topics/machine-learning (Accessed: 4 May 2025).
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                Luft, J. and Ingham, H. (1955) <i>The Johari Window: A Graphic Model for Interpersonal Awareness</i>. University of California, Western Training Lab
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                McCormack, J., Gifford, T. and Hutchings, P. (2019) ‘Autonomy, Authenticity, Authorship and Intention in computer generated art’, <i>EvoMUSART 2019: 8th Inter-national Conference on Computational Intelligence in Music, Sound, Art and Design</i>. Leipzig, Germany, April 2019. Cham: Springer Nature Switzerland AG. pp 35-50. Available at: https://doi.org/10.1007/978-3-030-16667-0_3
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                NAO. (2018) <i>Investigation: WannaCry cyber attack and the NHS</i>. Available at: https://www.nao.org.uk/wp-content/uploads/2017/10/Investigation-WannaCry-cyber-attack-and-the-NHS-Summary.pdf (Accessed: 2 May 2025).
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                NHE. (2018) <i>WannaCry cyber-attack cost the NHS £92m after 19,000 appointments were cancelled</i>. Available at: https://www.nationalhealthexecutive.com/articles/wannacry-cyber-attack-cost-nhs-ps92m-after-19000-appointments-were-cancelled (Accessed: 2 May 2025).
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                Pilat, D. and Sekoul, K. (2021) <i>Correlation vs Causation</i>. Available at: https://thedecisionlab.com/reference-guide/philosophy/correlation-vs-causation (Accessed: 18 May 2025).
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                Rolfe, G., Freshwater, D. and Jasper, M. (2001) <i>Critical reflection in nursing and the helping professions: a user’s guide</i>. Basingstoke: Palgrave Macmillan.
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                Scikit-Learn. (no date) <i>Supervised Learning</i>. Available at: https://scikit-learn.org/stable/supervised_learning.html (Accessed: 23 May 2025).
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                Sharma, A.V. (2017) <i>Understanding Activation Functions in Neural Networks</i>. Available at: https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0 (Accessed: 12 June 2025).
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                Wall, M. (2019) <i>Biased and wrong? Facial recognition tech in the dock</i>. Available at: https://www.bbc.com/news/business-48842750 (Accessed: 01 July 2025).
+                            </span>
+
+                            <span style="display: block; text-align: left; margin-bottom: 15px;">
+                                Wang, M. et al. (2021) ‘A systematic review of automatic text summarization for biomedical literature and EHRs’, <i>Journal of the American Medical Informatics Association</i>, 28(10), pp. 2287-2297. Available at: 10.1093/jamia/ocab143
+                            </span>
+                                    
+
+
+                            
+                        </p>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
