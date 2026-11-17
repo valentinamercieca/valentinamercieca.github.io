@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>e-Portfolio by Valentina Mercieca</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /> <!-- Font Awesome -->
+        <style>
+            /* Remove only the line above the h1 "The Data Professional" */
+            .no-line {
+                border: none;  /* Ensure no border is applied */
+                margin: 0;     /* Remove margin to avoid spacing issues */
+                padding: 0;    /* Remove padding */
+            }
+
+            /* This is for existing hr elements to keep them as they are */
+            hr.major {
+                display: block; /* Ensure hr elements show normally */
+                margin: 20px 0; /* Adjust spacing as needed */
+            }
+
+            /* Increase font size for the paragraph */
+            .big-data-paragraph {
+                font-size: 1.3em; /* Adjust font size */
+                line-height: 1.6; /* Adjust line height for readability */
+                margin-bottom: 0.5em; /* Reduced margin between paragraphs */
+                text-align: justify; /* Justify text alignment */
+            }
+
+            /* Styling for headings */
+            h2 {
+                font-size: 1.75em;
+                margin-top: 1.5em; /* Space before the heading */
+                margin-bottom: 1em; /* Space after the heading */
+                font-weight: bold;
+            }
+
+            h3 {
+                font-size: 1.3em;
+                margin-top: 1.2em; /* Space before the subheading */
+                margin-bottom: 0.5em; /* Space after the subheading */
+                font-weight: normal; /* Ensures the text is not bold */
+                color: inherit; /* Inherit the color of the surrounding text */
+            }
+
+
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Main -->
+            <div id="main">
+                <div class="inner">
+
+                    <!-- Header -->
+                    <header id="header">
+                        <a href="index.html" class="logo"><strong>Valentina Mercieca - MSc in Data Science - University of Essex Online</strong></a>
+                        <ul class="icons">
+                            <li><a href="https://www.linkedin.com/in/valentina-mercieca-473263239" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://github.com/valentinamercieca" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </header>
+
+
+                    <!-- Content -->
+                    <section>
+                        <header class="main">
+                            <h1 class="no-line">Numerical Analysis</h1> <!-- Added the class here -->
+                        </header>
+
+
+
+                        <!-- Increase font size for this paragraph -->
+                        <p class="big-data-paragraph">
+                            The Numerical Analysis module focused on the mathematical and statistical methods that underpin data science and artificial intelligence. It used R to put those methods into practice, with an emphasis on choosing an appropriate method, interpreting the results and communicating what the evidence supports.
+                        </p>
+
+
+                        <hr class="major" /> <!-- Line here -->
+
+
+
+                        <h2>Unit 1: Types and Sources of Data and an Introduction to R</h2>
+
+<p class="big-data-paragraph">This unit revisited the distinction between descriptive and inferential statistics and explored how the source of a dataset influences the conclusions that can be drawn from it. We looked at nominal, ordinal, interval and ratio scales and how they guide the choice of summary. For example, a frequency table can summarise responses on an ordered scale without assuming that the gaps between categories are equal.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Formative Activity: Descriptive Statistics in RStudio</h3>
+
+<p class="big-data-paragraph">I used the 2013 to 2014 <i>Crime Survey for England and Wales</i> teaching dataset to summarise respondents’ scores on the antisocx measure of neighbourhood antisocial behaviour. I imported the SPSS file into R using haven, checked for missing values and used summary() and psych::describe() to examine the centre, spread and shape of the available scores.</p>
+
+<p class="big-data-paragraph">The mean was close to zero and the distribution was right-skewed, with a tail of higher scores. Looking back, I would check how the survey defines the scale before interpreting what a value near zero means. I would also check how the survey coded missing values. Only 2,149 of the 8,843 records had a value for antisocx, so the results describe the recorded scores, and their representativeness depends on which respondents had a score.</p>
+
+<p class="big-data-paragraph">The R script shows how I generated the summaries, and the RStudio activity write-up records my results and interpretation. They can be found <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%202%20Analysis%20of%20the%20bcsvictim%20Variable.pdf" target="_blank">here</a>, respectively.</p>
+
+<hr class="major" />
+
+<h2>Unit 2: Data Structures in R</h2>
+
+<p class="big-data-paragraph">This unit explored how R stores and works with data in vectors, matrices and data frames. We looked at arithmetic operations on vectors and matrices and how to inspect variables in a data frame. The survey exercise gave me a practical example of why it matters to check what a variable represents. A column stored as numbers can contain codes for categories, which affects how it should be summarised.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Formative Activity: Analysis of the bcsvictim Variable</h3>
+
+<p class="big-data-paragraph">I returned to the 2013 to 2014 <i>Crime Survey for England and Wales</i> teaching dataset to examine whether respondents had experienced crime in the 12 months before the survey. I used str() to inspect the bcsvictim variable and table() to count responses. I then used haven::as_factor() to display the category labels alongside the counts. The counts stayed the same after conversion, but the labels made the table easier to interpret.</p>
+
+<p class="big-data-paragraph">The R script shows the steps I followed, and the analysis write-up records the results and my interpretation. These can be accessed <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%202%20Analysis%20of%20the%20bcsvictim%20Variable.R" target="_blank">here</a> and <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%202%20Analysis%20of%20the%20bcsvictim%20Variable.pdf" target="_blank">here</a>, respectively.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Seminar Preparation: Understanding Descriptive Statistics</h3>
+
+<p class="big-data-paragraph">For the seminar, I used Hazra and Gogtay (2016) to review z-scores and the relationship between variance and standard deviation. A z-score expresses how far an observation lies above or below the mean in standard deviation units. I also considered why standard deviation is easier to interpret when describing spread, since it uses the same units as the original observations.</p>
+
+<p class="big-data-paragraph">The descriptive statistics activity contains my responses to the seminar questions and they can be viewed <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%202%20Understanding%20Descriptive%20Statistics%20Activity.pdf" target="_blank">here</a>.</p>
+
+<hr class="major" />
+
+<h2>Unit 3: Data Management in R</h2>
+
+<p class="big-data-paragraph">This unit built on the previous work with data frames by focusing on how to inspect and prepare imported data. We looked at how to check the structure of a dataset, examine individual variables, convert data types and handle missing values. The survey exercise illustrated why checking value labels matters before filtering. A code such as 7 only identifies the intended age group once its meaning has been confirmed in the dataset.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Formative Activity: Filtering Survey Data in R</h3>
+
+<p class="big-data-paragraph">I used the 2013 to 2014 <i>Crime Survey for England and Wales</i> teaching dataset to create a subset of respondents aged 75 and over who had experienced crime in the 12 months before the survey. I imported the SPSS file with haven, checked the value labels for agegrp7 and bcsvictim, and converted both variables to character vectors. I then used dplyr::filter() to select records that met both conditions and saved the subset as crime_75victim.csv.</p>
+
+<p class="big-data-paragraph">The Unit 3 R script shows how I checked the codes, filtered the records and exported the subset. This can be accessed <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%203%20Data%20Activity.R" target="_blank">here</a>.</p>
+
+<hr class="major" />
+
+<h2>Unit 4: Probabilities, Probability Distributions, and Sampling</h2>
+
+<p class="big-data-paragraph">This unit explored how probability describes uncertainty and how sampling affects what we can infer about a population. We looked at discrete distributions for outcomes such as counts and continuous distributions for measurements such as time. We also compared simple random, stratified random, systematic and cluster sampling.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Formative Activity: Probability Exercises</h3>
+
+<p class="big-data-paragraph">I worked through questions from Holmes <i>et al</i>. (2017), using probability notation to describe complements, unions, intersections and conditional events. In one exercise, I calculated that two mutually exclusive events with probabilities of 0.26 and 0.37 had a combined probability of 0.63 because they could not occur together. In another, I used independence to show that knowing one event had occurred left the probability of the other unchanged.</p>
+
+<p class="big-data-paragraph">The Unit 4 probability activity contains my worked answers and can be found <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%204%20Probability%20Activity.pdf" target="_blank">here</a>.</p>
+
+<hr class="major" />
+
+<h2>Unit 5: Producing Plots and Introducing Calculus</h2>
+
+<p class="big-data-paragraph">This unit focused on choosing plots for different types of data and using R to adjust titles, axis labels and colours so the results are easier to interpret. It also introduced differentiation as a way to describe a rate of change and integration as a way to measure accumulation, such as the area under a probability density curve.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Formative Activity: Visualising Crime Survey Data in R</h3>
+
+<p class="big-data-paragraph">I returned to the <i>Crime Survey for England and Wales</i> teaching dataset and created the same plots using base R graphics and ggplot2. I used boxplots to show the spread of neighbourhood antisocial behaviour scores (antisocx) and highlight observations beyond the whiskers. I also used bar charts to compare counts of respondents who reported experiencing crime in the previous 12 months with those who reported none (bcsvictim). The plots gave me a way to revisit the summaries from Units 1 and 2 visually.</p>
+
+<p class="big-data-paragraph">The Unit 5 data activity script contains both versions of each plot and can be accessed <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%205%20Data%20Activity.R" target="_blank">here</a>.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Seminar Preparation: Probabilities and Producing Plots</h3>
+
+<p class="big-data-paragraph">I used R’s built-in BOD dataset to create a bar chart, a pie chart and a histogram. The bar chart let me compare biochemical oxygen demand at each recorded time, while the histogram showed how the demand values were distributed. Looking back, I would use a plot with time on the horizontal axis to examine change over time, since the order of the measurements is important to that question.</p>
+
+<p class="big-data-paragraph">The Unit 5 seminar preparation script contains the code for all three plots and can be accessed <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%205%20Probabilities%20and%20Producing%20Plots.R" target="_blank">here</a>.</p>
+
+<hr class="major" />
+
+<h2>Unit 6: Statistical Inference, Confidence Intervals, and Hypothesis Testing</h2>
+
+<p class="big-data-paragraph">This unit built on the work on probability and sampling by looking at how sample data can be used to draw conclusions about a population. We explored how confidence intervals communicate the precision of an estimate and how hypothesis tests use a test statistic and a <i>p</i>-value to assess evidence against a null hypothesis. The significance level provides a threshold for that decision, while the estimated effect helps put the result into context.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Statistics Quiz</h3>
+
+<p class="big-data-paragraph">The quiz covered confidence intervals, the F statistic used in ANOVA and decisions based on <i>p</i>-values. It also covered Type I error, which occurs when a true null hypothesis is rejected.</p>
+
+<p class="big-data-paragraph">The Unit 6 Statistics Quiz shows my answers and feedback. It can be viewed <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%206%20Statistics%20Quiz.pdf" target="_blank">here</a>.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Seminar Preparation: Hypothesis Testing</h3>
+
+<p class="big-data-paragraph">For the seminar, I used Sarmukaddam (2012) to review the roles of the null and alternative hypotheses and consider how sample size affects inference. A larger sample can improve precision and narrow a confidence interval, while the way the sample is selected still matters for how well it represents the population.</p>
+
+<p class="big-data-paragraph">I connected this to my work as a statistician. A difference can be statistically significant and still be too small to matter for the decision at hand. Looking at the estimated size of the difference and its confidence interval helps put the test result into practical terms.</p>
+
+<p class="big-data-paragraph">The hypothesis testing seminar notes containing my responses to the preparation questions can be viewed <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%206%20Seminar%20Hypothesis%20Testing.pdf" target="_blank">here</a>.</p>
+
+<hr class="major" />
+
+<h2>Unit 7: Parametric Tests</h2>
+
+<p class="big-data-paragraph">This unit built on hypothesis testing by looking at how to choose and interpret parametric tests in R. We covered t-tests and the F statistic used in ANOVA, with attention to how the study design and the assumptions of each test guide that choice. For example, comparing two independent groups calls for a different approach from comparing measurements taken from the same people before and after an intervention.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Formative Activity: Comparing Systolic Blood Pressure in R</h3>
+
+<p class="big-data-paragraph">I used the Health_Data dataset to calculate the mean, median and mode for systolic blood pressure, diastolic blood pressure and income. I also summarised the income distribution and created a boxplot to show its spread.</p>
+
+<p class="big-data-paragraph">I then used Welch’s two-sample t-test to compare mean systolic blood pressure between participants with and without a peptic ulcer. The test gave a <i>p</i>-value of 0.2296, and the 95% confidence interval for the difference in means ran from −2.89 to 11.80. At the 5% significance level, the result provided insufficient evidence of a difference in mean systolic blood pressure between the two groups. The confidence interval also showed the range of differences compatible with the data under the test assumptions.</p>
+
+<p class="big-data-paragraph">The Unit 7 R script contains my descriptive summaries, boxplot code and t-test. This script can be viewed <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%207%20Data%20Activity.R" target="_blank">here</a>.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Assessment: Mathematics Test</h3>
+
+<p class="big-data-paragraph">The test brought together descriptive statistics and statistical inference. I used promotion rates to compare outcomes across groups with different numbers of applicants, grouped daily cash machine usage into a frequency distribution, and compared how long nurses and healthcare assistants had been in their current roles. I also interpreted R output for an independent two-sample t-test on cholesterol levels and a paired t-test on weight measured before and after an intervention. The two examples reinforced why the relationship between observations matters when selecting a test.</p>
+
+<p class="big-data-paragraph">The Mathematics Test records my submission. My worked answers are available for Questions 1-5. These can be accessed <a href="https://github.com/valentinamercieca/Numerical_Analysis/tree/main/Unit%207%20Mathematics%20Test" target="_blank">here</a>.</p>
+
+<hr class="major" />
+
+<h2>Unit 8: Nonparametric Tests</h2>
+
+<p class="big-data-paragraph">This unit built on the parametric tests covered in Unit 7 by examining when rank-based tests are appropriate. We compared the Mann-Whitney U test for two independent groups, the Wilcoxon signed-rank test for paired observations and the Kruskal-Wallis test for multiple independent groups. The choice of test depended on the type of data, how the observations were collected and what the analysis aimed to compare.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Formative Activity 1: Comparing Blood Pressure Across Groups</h3>
+
+<p class="big-data-paragraph">I used the Health_Data dataset to summarise participants’ ages and explore differences in blood pressure. After checking normality with the Shapiro-Wilk test, I used the Wilcoxon rank-sum test to compare diastolic blood pressure by diabetes status and the Kruskal-Wallis test to compare systolic blood pressure across occupational groups. The <i>p</i>-values were 0.7999 and 0.8545, respectively, so both tests provided insufficient evidence of a group difference at the 5% significance level.</p>
+
+<p class="big-data-paragraph">The first R activity contains my code and interpretation. This can be viewed <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%208%20Data%20Activity%201.R" target="_blank">here</a>.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Formative Activity 2: Comparing Post-Training Efficiency Scores</h3>
+
+<p class="big-data-paragraph">In the scenario-based exercise, I used one-way ANOVA to compare post-training efficiency scores across three vendors. The overall test provided evidence that at least one group mean differed. Looking back, I would use follow-up comparisons to identify which groups differed. The exercise only supplied post-training scores, so the analysis compared performance after training. Measuring improvement would require baseline scores.</p>
+
+<p class="big-data-paragraph">The second R activity contains my distribution checks and ANOVA. This can be viewed <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%208%20Data%20Activity%202.R" target="_blank">here</a>.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Seminar Preparation: The Role of Statistical Significance</h3>
+
+<p class="big-data-paragraph">I reviewed Fox and Mathers (1997) and considered how statistical power relates to sample size and the effect a study aims to detect. My notes connected this to study planning. Before collecting data, specifying the smallest effect that would matter in practice helps determine how large a sample is needed and how to allocate resources.</p>
+
+<p class="big-data-paragraph">The seminar preparation notes containing my responses on statistical power and its implications for analysts can be found <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%208%20The%20Role%20of%20Statistical%20Significance.pdf" target="_blank">here</a>.</p>
+
+<hr class="major" />
+
+<h2>Unit 9: Creating Cross-tabulations and Performing Chi-Square Analysis</h2>
+
+<p class="big-data-paragraph">This unit explored how cross-tabulations summarise the relationship between two categorical variables. We also looked at how to create subsamples in R and how a chi-square test of independence compares observed counts with the counts expected if the variables were independent.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Formative Activity: Cross-tabulating Crime Victimisation by Age Group</h3>
+
+<p class="big-data-paragraph">I used the 2013 to 2014 <i>Crime Survey for England and Wales</i> teaching dataset to cross-tabulate whether respondents had experienced crime in the previous 12 months (bcsvictim) by age group (agegrp7). I used table() to count responses and prop.table() to calculate row percentages, then formatted the results to two decimal places with knitr::kable().</p>
+
+<p class="big-data-paragraph">Looking back, the denominator matters for interpreting this table. The row percentages show how respondents in each victimisation category were distributed across age groups. To identify which age groups had the highest and lowest proportions of respondents who reported experiencing crime, I would calculate column percentages and compare the values in the victim row.</p>
+
+<p class="big-data-paragraph">The Unit 9 R script containing my cross-tabulation and percentage calculations can be found <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%209%20Data%20Activity.R" target="_blank">here</a>.</p>
+
+<hr class="major" />
+
+<h2>Unit 10: Correlation</h2>
+
+<p class="big-data-paragraph">This unit explored how correlation describes the strength and direction of an association between two variables. I focused on interpreting Pearson’s correlation alongside a scatter plot. The coefficient summarises the linear association, while the plot helps reveal features such as unusual observations or a curved pattern that a single number can obscure.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Formative Activity: Correlation Between Systolic and Diastolic Blood Pressure</h3>
+
+<p class="big-data-paragraph">I used the Health_Data dataset to calculate Pearson’s correlation between systolic and diastolic blood pressure in R. Using cor() with use = "complete.obs", I included only records with both measurements. The correlation was approximately 0.847, indicating a strong positive linear association. In this dataset, participants with higher systolic readings tended to have higher diastolic readings.</p>
+
+<p class="big-data-paragraph">I also used ggplot2 to create a scatter plot, with systolic blood pressure on the horizontal axis and diastolic blood pressure on the vertical axis. This gave me a way to inspect the pattern behind the coefficient.</p>
+
+<p class="big-data-paragraph">The Unit 10 R script containing the correlation calculation and scatter plot code can be found <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%2010%20Data%20Activity.R" target="_blank">here</a>.</p>
+
+<hr class="major" />
+
+<h2>Unit 11: Regression Analysis</h2>
+
+<p class="big-data-paragraph">This unit built on correlation by introducing simple linear regression. In Unit 10, I used Pearson’s correlation to summarise the association between systolic and diastolic blood pressure. In this unit, I used a fitted regression line to estimate diastolic blood pressure from systolic blood pressure and considered what the slope, <i>p</i>-value and (R^2) each tell us about the model.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Formative Activity: Predicting Diastolic Blood Pressure in R</h3>
+
+<p class="big-data-paragraph">I used lm() to fit a simple linear regression model to the Health_Data dataset, with systolic blood pressure as the predictor and diastolic blood pressure as the outcome. The fitted slope was 0.496, meaning that a systolic reading 1 mmHg higher corresponded to a predicted diastolic reading about 0.50 mmHg higher. The slope was statistically significant at the 5% level, and the model accounted for 71.7% of the variation in diastolic blood pressure in the data used to fit it.</p>
+
+<p class="big-data-paragraph">The Unit 11 R script containing the model code and my interpretation of the output can be found <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%2011%20Data%20Activity.R" target="_blank">here</a>.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Seminar Preparation: Simple Linear Regression</h3>
+
+<p class="big-data-paragraph">I reviewed how Swain <i>et al</i>. (2000) used scores from the Abbreviated Mental Test to estimate scores on the Mini-Mental State Examination. I identified the predictor and outcome and considered whether a straight-line model was appropriate. Looking back at my notes, I would interpret the small <i>p</i>-value as evidence against a zero slope under the model assumptions. To judge how useful the equation is for estimating an individual’s score, I would also look at the size and spread of the prediction errors.</p>
+
+<p class="big-data-paragraph">The seminar preparation notes containing my responses to the questions about the study can be found <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%2011%20Simple%20Linear%20Regression.pdf" target="_blank">here</a>.</p>
+
+<hr class="major" />
+
+<h2>Unit 12: Bayesian Data Analysis</h2>
+
+<p class="big-data-paragraph">This unit introduced Bayes’ theorem and how Bayesian analysis combines prior information with observed data to update what we know about an unknown quantity. I considered how a prior can make existing knowledge explicit, and why it is useful to check how sensitive the conclusions are to the choice of prior.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">Formative Activity: Bayes’ Probability</h3>
+
+<p class="big-data-paragraph">I worked through a fair-die example and used historical UK mortality counts to calculate the proportion of deaths attributed to coronary heart disease among men and women in 2002. The denominator was important because each proportion described deaths within a group. I also considered how changes in population composition and treatment could limit the use of those figures to estimate proportions in later years.</p>
+
+<p class="big-data-paragraph">The Bayes probability activity contains my calculations and discussion. It can be found <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%2012%20Bayes%20Probability%20Activity.pdf" target="_blank">here</a>.</p>
+
+
+<h3 style="font-weight: 600;" class="spaced-heading">End of Module Assessment 1: Statistical Analysis Presentation</h3>
+
+<p class="big-data-paragraph">I used R to analyse drinking patterns in the 2011 <i>Health Survey for England</i>. I summarised the sample, used chi-square tests to examine associations between drinking status and gender and region, and compared height and weight across groups. I also used Spearman’s rank correlation to explore associations among drinking status, household income, age and gender.</p>
+
+<p class="big-data-paragraph">Preparing the presentation gave me practice explaining what each test could answer. In particular, the drinking-status variable indicated whether respondents reported drinking. Comparisons using that variable describe differences in the proportion who drank. Comparing how much people drank would require a measure of consumption.</p>
+
+<p class="big-data-paragraph">The presentation slides include the results and R commands, and the transcript contains my discussion and interpretation. These can be found <a href="https://github.com/valentinamercieca/Numerical_Analysis/tree/main/Unit%2012%20Assessment%201" target="_blank">here</a>.</p>
+
+<h3 style="font-weight: 600;" class="spaced-heading">End of Module Assessment 2: Individual Reflection</h3>
+
+<p class="big-data-paragraph">I used Rolfe <i>et al</i>.’s (2001) reflective model to review how the module built on my background in mathematics, statistics and operations research. I reflected on using R to create summary tables, cross-tabulations and plots, including how I moved from base R graphics to ggplot2. I also considered how I explain <i>p</i>-values and confidence intervals. A test result addresses the evidence against a hypothesis, while an interval helps me discuss the size and precision of an estimate.</p>
+
+<p class="big-data-paragraph">The reflective essay brings together examples from the module and considers how I can apply them in my work as a statistician. The essay can be viewed <a href="https://github.com/valentinamercieca/Numerical_Analysis/blob/main/Unit%2012%20Assessment%202%20-%20Reflective%20Essay.pdf" target="_blank">here</a>.</p>
+
+<hr class="major" />
+
+<h2>References</h2>
+
+<p class="big-data-paragraph">
+    <span style="display: block; text-align: left; margin-bottom: 15px;">Hazra, A., &amp; Gogtay, N. (2016) Biostatistics Series Module 1: Basics of Biostatistics. <i>Indian journal of dermatology</i> 61(1): 10-20.</span>
+    <span style="display: block; text-align: left; margin-bottom: 15px;">Holmes, A., Illowsky, B,. &amp; Dean, S. (2017) <i>Introductory Business Statistics.</i> OpenStax.</span>
+    <span style="display: block; text-align: left; margin-bottom: 15px;">Sarmukaddam S. B. (2012) Interpreting "statistical hypothesis testing" results in clinical research. <i>Journal of Ayurveda and integrative medicine</i> 3(2): 65-69.</span>
+    <span style="display: block; text-align: left; margin-bottom: 15px;">Fox and Mathers (1997) Empowering your research: statistical power in general practice research. <i>Family Practice </i>14(4): 324-329.</span>
+    <span style="display: block; text-align: left; margin-bottom: 15px;">Swain DG. et al. (2000) Cognitive assessment in elderly patients admitted to hospital: the relationship between the Abbreviated Mental Test (AMT) and the Mini-Mental State Examination (MMSE). <i>Clinical Rehabilitation </i>13: 503-508.</span>
+    <span style="display: block; text-align: left; margin-bottom: 15px;">Rolfe, G., Freshwater, D. &amp; Jasper, M. (2001) Critical reflection in nursing and the helping professions: a user’s guide. Basingstoke: Palgrave Macmillan.</span>
+</p>
+
+
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

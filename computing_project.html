@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>e-Portfolio by Valentina Mercieca</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+        .no-line {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        hr.major {
+            display: block;
+            margin: 20px 0;
+        }
+
+        .big-data-paragraph {
+            font-size: 1.3em;
+            line-height: 1.6;
+            margin-bottom: 0.5em;
+            text-align: justify;
+        }
+
+        h2 {
+            font-size: 1.75em;
+            margin-top: 1.5em;
+            margin-bottom: 1em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+    <div id="wrapper">
+        <div id="main">
+            <div class="inner">
+                <header id="header">
+                    <a href="index.html" class="logo">
+                        <strong>Valentina Mercieca - MSc in Data Science - University of Essex Online</strong>
+                    </a>
+                    <ul class="icons">
+                        <li>
+                            <a href="https://www.linkedin.com/in/valentina-mercieca-473263239" class="icon brands fa-linkedin">
+                                <span class="label">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/valentinamercieca" class="icon brands fa-github">
+                                <span class="label">GitHub</span>
+                            </a>
+                        </li>
+                    </ul>
+                </header>
+
+                <section>
+                    <header class="main">
+                        <h1 class="no-line">Computing Project</h1>
+                    </header>
+
+                    <p class="big-data-paragraph">For my MSc Computing Project, I developed and evaluated a pipeline to parse and standardise Maltese administrative addresses. The project grew out of a data quality problem relevant to official statistics. Addresses are often recorded as free text, with differences in spelling, abbreviations and the use of Maltese and English. These variations can make it difficult to link records that refer to the same address.</p>
+
+                    <hr class="major" />
+
+                    <h2>Dissertation: Natural Language Processing and Machine Learning for Automatic Address Parsing, Standardisation, and Data Quality Improvement in Administrative Data</h2>
+
+                    <p class="big-data-paragraph">I formulated address parsing as a named entity recognition (NER) task and built an annotated dataset of 3,000 address strings from administrative records provided by Malta’s National Statistics Office. I compared six models, including a spaCy model, a BiLSTM-CRF model and four transformer-based models. I evaluated them using entity-level precision, recall and F1, and considered inference time when choosing a model for the full dataset.</p>
+
+                    <p class="big-data-paragraph">BERTu and multilingual BERT achieved the joint highest test-set F1 score of 0.9948. I selected BERTu because it matched multilingual BERT on F1 with a shorter inference time in my evaluation. The spaCy model also performed competitively, with an F1 score of 0.9931 and substantially faster inference. Comparing those results helped me weigh a small gain in extraction performance against the time needed to process the full dataset.</p>
+
+                    <p class="big-data-paragraph">The dissertation documents the research design, annotation process, model evaluation and limitations. It can be accessed <a href="https://github.com/valentinamercieca/MSc_Computing_Project/blob/main/MSc%20Data%20Science%20-%20Computing%20Project%20-%20Valentina%20Mercieca.pdf">here</a>.</p>
+
+                    <hr class="major" />
+
+                    <h2>Artefact and Dissertation Presentation</h2>
+
+                    <p class="big-data-paragraph">The artefact combines machine learning with rule-based address reconstruction. The model extracts components such as the property number, street name, locality and island. The reconstruction rules then put the extracted components into a consistent format for downstream tasks such as record linkage and data integration.</p>
+
+                    <p class="big-data-paragraph">In my presentation, I demonstrated how I trained and evaluated the transformer models and how I applied BERTu to the full administrative dataset. This gave me a way to explain what the model contributed and where the reconstruction rules mattered. The model was evaluated on how accurately it identified address components. Producing usable addresses also depended on how those components were assembled, particularly when the original record was incomplete.</p>
+
+                    <p class="big-data-paragraph">The dissertation presentation summarises the research and demonstrates the workflow. The project repository contains the implementation. These can be accessed <a href="https://github.com/valentinamercieca/MSc_Computing_Project/blob/main/MSc%20Data%20Science%20-%20Presentation%20-%20Valentina%20Mercieca.pdf">here</a> and <a href="https://github.com/valentinamercieca/MSc_Computing_Project/tree/main">here</a>, respectively.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
